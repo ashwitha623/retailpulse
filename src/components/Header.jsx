@@ -1,9 +1,9 @@
 import React from 'react';
-import { BarChart3, Database, Loader2, AlertCircle, Coins } from 'lucide-react';
+import { BarChart3, Database, Loader2, AlertCircle } from 'lucide-react';
 
 /**
  * Header component for RetailPulse dashboard.
- * Uses navy theme (#0F172A) with clear typography, currency note, and dataset status badge.
+ * Uses navy theme (#0F172A) with clear typography and dataset status badge.
  */
 export default function Header({
   totalCount = 0,
@@ -31,16 +31,8 @@ export default function Header({
             </div>
           </div>
 
-          {/* Right Meta Controls: Currency Note + Dataset Status */}
+          {/* Right Meta Controls: Dataset Status */}
           <div className="flex flex-wrap items-center gap-2.5 self-start lg:self-auto">
-            
-            {/* Currency Note */}
-            <div className="flex items-center space-x-2 bg-slate-800/90 px-3.5 py-1.5 rounded-lg border border-slate-700/80 text-xs text-slate-300">
-              <Coins className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Currency: <strong className="text-white font-medium">INR</strong></span>
-              <span className="text-slate-500 font-light">|</span>
-              <span className="text-slate-300">Fixed conversion: <strong className="text-white font-medium">1 USD = ₹96</strong></span>
-            </div>
 
             {/* Dataset Status */}
             <div className="flex items-center space-x-2 bg-slate-800/90 px-3.5 py-1.5 rounded-lg border border-slate-700/80 text-xs text-slate-300">
