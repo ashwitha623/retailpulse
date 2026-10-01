@@ -28,3 +28,4 @@ dist-ssr
 pre_deployment_qa.js
 verify_dashboard.js
 verify_stage5a.js
+.vercel
