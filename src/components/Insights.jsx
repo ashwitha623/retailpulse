@@ -149,7 +149,7 @@ export default function Insights({ data = [] }) {
         title: `${topSegment.name} has the highest sales`,
         highlight: formatCompactINR(topSegment.sales, false),
         highlightType: 'neutral',
-        description: `${topSegment.name} segment generates ${formatCompactINR(topSegment.sales, false)} in sales and ${formatCompactINR(topSegment.profit, false)} in profit.`,
+        description: `${topSegment.name} has the highest sales among customer segments, with ${formatCompactINR(topSegment.sales, false)} in sales and ${formatCompactINR(topSegment.profit, false)} in profit.`,
       });
     }
 
@@ -162,7 +162,7 @@ export default function Insights({ data = [] }) {
 
       results.push({
         id: 'state',
-        category: 'TOP STATE',
+        category: 'TOP STATE / LOCATION',
         icon: Landmark,
         badgeColor: 'bg-slate-100 text-slate-700 border-slate-200',
         title: `${topState.name} has the highest profit`,
@@ -170,7 +170,7 @@ export default function Insights({ data = [] }) {
         highlightType: 'positive',
         description: hasDeficit
           ? `${topState.name} makes the most profit (${formatCompactINR(topState.profit, false)}), while ${bottomState.name} has the biggest loss (${formatCompactINR(bottomState.profit, false)}).`
-          : `${topState.name} makes the most profit (${formatCompactINR(topState.profit, false)}). All selected states are profitable.`,
+          : `${topState.name} makes the most profit (${formatCompactINR(topState.profit, false)}). All selected states / locations are profitable.`,
       });
     }
 

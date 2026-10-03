@@ -14,9 +14,9 @@ import CustomTooltip from './CustomTooltip';
 import { formatCompactINR, USD_TO_INR } from '../../utils/formatters';
 
 /**
- * Chart 6: Top & Bottom States by Profit (Displayed in INR)
- * Horizontal diverging bar chart displaying the Top 5 and Bottom 5 states by profit.
- * Automatically switches states dynamically based on active filter selections.
+ * Chart 6: Top & Bottom States / Locations by Profit (Displayed in INR)
+ * Horizontal diverging bar chart displaying the Top 5 and Bottom 5 state-level locations by profit.
+ * Automatically switches locations dynamically based on active filter selections.
  */
 export default function StateProfitChart({ data = [] }) {
   const chartData = useMemo(() => {
